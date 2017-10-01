@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css" link="bootstrap.css"></style>
 	<style type="text/css">
     body,
     html{
@@ -21,15 +22,18 @@
 
 </head>
 <body>
-  
-	<div id="search">
-  	<input id="text" type="text" value="">
-		<button id="submit-btn">Submit</button>
-	</div>
+  <div class="container">
+  	<div id="search">
+    	<input id="text" type="text" value="">
+  		<button id="submit-btn">Submit</button>
+  	</div>
+
+  </div>
   <div id="map"></div>
+  
+  <script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="app.js"></script>
- 	<script type="text/javascript" src="jquery.js"></script> 	
 	<script type="text/javascript" src="knockout.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7EkntE_zehiMWEKBvl81CqqHMErQ0WpM&callback=googleSuccess" onerror="alert('Unfortunately an error has encountered')" ></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7EkntE_zehiMWEKBvl81CqqHMErQ0WpM&libraries=places&callback=googleSuccess" onerror="alert('Unfortunately an error has encountered')" ></script>
 </body>
 </html>
